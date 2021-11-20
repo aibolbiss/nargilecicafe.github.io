@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(#3f51b5, #000);
+}
+.main{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: center;
+    background-image: url('./img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+header:before{
+    background: rgb(0 0 0 / 50%);
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+header > img{
+    width: 205px;
+    margin: 60px 0;
+}
+h1{
+    position: absolute;
+    top: 65%;
+    border-top: 1px solid #fff;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 20px;
+}
+span{
+    color: #fff;
+    font-family: 'Comforter Brush', cursive;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+/* BLOCK-1 */
+.block1{
+    background-image: url('img/mramor.jpeg');
+    background-size: contain;
+    display: flex;
+}
+.block1__item1, .block1__item2{
+    width: 50%;
+}
+.block1__item1 > img{
+    border-radius: 10px;
+    width: 70%;
+    margin: 40px 0;
+}
+.block1__item2{
+    padding-right: 30px;
+}
+.block1__item2 > h2{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #30271c;
+    font-family: 'Oswald', sans-serif;
+}
+.block1__item2 > p{
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size: 11px;
+    color: #30271c;
+}
+
+/* BLOCK-2 */
+.block2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 220px;
+    z-index: 4;
+    padding: 0 70px;
+}
+.block2:before{
+    background: rgb(0 0 0 / 50%);
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.block2 > h2{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+.block2 > p{
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 11px;
+}
+
+/* BLOCK-3 */
+.block3{
+    background-image: url('img/mramor.jpeg');
+    background-size: contain;
+}
+.block3__item{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 3;
+}
+.block3__item > img{
+    width: 85%;
+    border-radius: 20px;
+    margin: 28px 0 15px 0;
+}
+.block3__item > h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    color: #fff;
+}
+.block3__item > h3{
+    /* font-family: 'Merriweather', serif; */
+    padding: 15px 0;
+    position: absolute;
+    color: #fff;
+    background: linear-gradient(#BAB392, #807b61);
+    width: 85%;
+    bottom: 7px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+}
+
+.block3 > h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #30271c;
+    padding: 0 0 15px 0;
+    margin-bottom: 0;
+}
+
+/* BLOCK-4 */
+
+
+/* BLOCK-5 */
+.block5{
+    background-image: url('img/mramor.jpeg');
+    background-size: contain;
+    overflow: hidden;
+}
+.block5 > h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #30271c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.block5__item1 {
+    display: flex;
+    flex-direction: column;
+}
+.block5__item1 > a{
+    text-decoration: none;
+}
+.icon{
+    background: linear-gradient(#BAB392, #807b61);
+    position: relative;
+    height: 50px;
+    padding: 14px;
+    margin: 10px 30px;
+    border-radius: 30px;
+}
+.icon >img{
+    position: absolute;
+    top: 10px;
+    left: 86px;
+    width: 30px;
+}
+.icon > p{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.block5__item2{
+    margin: 15px 0 30px 0;
+}
+.block5__item2 > h2{
+    font-family: 'Oswald', sans-serif;
+    color: #30271c;
+    font-size: 25px;
+}
+
+
+@media screen and (min-width: 768px){
+.main {
+    max-width: 480px;
+}
+}
