@@ -30,7 +30,6 @@ header:before{
     z-index: -1;
 }
 header > img{
-    -webkit-width: 60%;
     width: 60%;
     margin: 60px 0;
 }
