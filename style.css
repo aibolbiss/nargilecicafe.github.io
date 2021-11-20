@@ -214,7 +214,7 @@ span{
 }
 
 
-@media screen and (min-width: 375px){
+@media screen and (max-width: 375px){
 .main {
     max-width: 480px;
 }
