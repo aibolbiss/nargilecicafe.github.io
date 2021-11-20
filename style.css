@@ -11,7 +11,7 @@ body {
 }
 
 /* HEADER */
-header{
+.banner{
     display: flex;
     justify-content: center;
     background-image: url('./img/2.jpg');
@@ -20,7 +20,7 @@ header{
     position: relative;
     z-index: 1;
 }
-header:before{
+.banner:before{
     background: rgb(0 0 0 / 50%);
     content: "";
     position: absolute;
@@ -29,7 +29,7 @@ header:before{
     height: 100%;
     z-index: -1;
 }
-header > img{
+.banner > img{
     width: 205px;
     margin: 60px 0;
 }
